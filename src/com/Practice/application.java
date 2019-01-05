@@ -25,6 +25,7 @@ public class application {
         mySet2.add("second");
         mySet2.add("computer");
         mySet2.add("whatever");
+        mySet2.add("random");
 
         Set<String > resultSet = union(mySet1,mySet2);
         Iterator<String > itr = resultSet.iterator();

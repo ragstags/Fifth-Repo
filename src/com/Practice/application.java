@@ -27,15 +27,20 @@ public class application {
         mySet2.add("whatever");
         mySet2.add("random");
 
-        Set<String > resultSet = union(mySet1,mySet2);
-        Iterator<String > itr = resultSet.iterator();
+
+        Set<String> resultSet = union(mySet1,mySet2);
+        Iterator<String> itr = resultSet.iterator();
         while (itr.hasNext()){
             System.out.println(itr.next());
         }
 
 
+
+
     }
-    public static <E>Set<E> union(Set<E> set1,Set<E> set2){
+
+
+    public static<E> Set<E> union(Set<E> set1 , Set<E> set2){
         Set<E> result = new HashSet<>(set1);
         result.addAll(set2);
         return result;
